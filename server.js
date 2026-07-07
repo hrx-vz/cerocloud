@@ -1,14 +1,11 @@
 const express = require('express');
 const multer = require('multer');
-const path = require('path');
-const fs = require('fs');
+const path = require('path');                                          const fs = require('fs');
 const crypto = require('crypto');
 const { exec } = require('child_process');
 
-const app = express();
-const PORT = 5000;
-
-// Almacenamiento local interno
+const app = express();                                                 const PORT = 5000;
+                                                                       // Almacenamiento local interno
 const INTERNAL_STORAGE = path.join(__dirname, 'storage');
 const DB_PATH = path.join(INTERNAL_STORAGE, 'usuarios.json');
 
@@ -37,6 +34,7 @@ app.use((req, res, next) => {
     res.header("Access-Control-Allow-Origin", "*");
     res.header("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
     res.header("Access-Control-Allow-Headers", "*");
+    res.header("Access-Control-Expose-Headers", "Content-Length");
     if (req.method === 'OPTIONS') return res.status(200).end();
     next();
 });
