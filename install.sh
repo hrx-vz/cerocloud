@@ -238,7 +238,8 @@ echo -e "$SEP_DOUBLE"
 
 # ACCESO LOCAL
 echo -e "${C_CYAN}${C_BOLD} 🏠 ACCESO LOCAL (Máxima velocidad en Casa)${C_RESET}"
-echo -e "${C_WHITE} Enlace Servidor: ${C_GREEN}${C_BOLD}http://${IP_LOCAL}:5000${C_RESET}\n"
+echo -e "${C_WHITE} Enlace Servidor: ${C_GREEN}${C_BOLD}http://${IP_LOCAL}:5000${C_RESET}"
+echo -e "${C_WHITE} pagina web local acceso sin !🛜: http://${IP_LOCAL}:5001${C_RESET}\n"
 
 echo -e " ${C_YELLOW}💡 ¿CÓMO CONECTAR EN LOCAL?${C_RESET}"
 echo -e " ${C_WHITE}1. Abre tu aplicación ${C_BOLD}MiNube${C_RESET}."
